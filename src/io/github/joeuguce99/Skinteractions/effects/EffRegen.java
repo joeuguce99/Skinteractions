@@ -1,14 +1,11 @@
 package io.github.joeuguce99.Skinteractions.effects;
 
-import java.lang.reflect.Method;
-
 import org.bukkit.Bukkit;
 import org.bukkit.World;
 import org.bukkit.event.Event;
 
 import com.onarandombox.MultiverseCore.MultiverseCore;
 import com.onarandombox.MultiverseCore.api.MVWorldManager;
-import com.onarandombox.MultiverseCore.api.MultiverseWorld;
 
 import ch.njol.skript.lang.Effect;
 import ch.njol.skript.lang.Expression;
@@ -20,7 +17,6 @@ public class EffRegen extends Effect {
 	private Expression<World> world;
 	private Expression<String> seed;
 	private byte method;
-    private MVWorldManager worldManager;
         
 	@SuppressWarnings("unchecked")
 	@Override
@@ -31,7 +27,7 @@ public class EffRegen extends Effect {
  		} else if(matchedPattern == 1){
  			seed = (Expression<String>) exprs[1];
  			method = 1;
- 		} else if(matchedPattern == 0){
+ 		} else if(matchedPattern == 2){
  			method = 2;
  		}
 		return true;
