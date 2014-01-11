@@ -1,0 +1,5 @@
+name: Skinteractions
+main: io.github.joeuguce99.Skinteractions.Skinteractions
+version: Alpha A
+depend: [Skript]
+soft-depend: [Multiverse-Core]
