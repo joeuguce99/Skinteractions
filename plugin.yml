@@ -1,5 +1,6 @@
 name: Skinteractions
+description: An addon for Skript
 main: io.github.joeuguce99.Skinteractions.Skinteractions
-version: Alpha A
+version: 1.0
 depend: [Skript]
 soft-depend: [Multiverse-Core]

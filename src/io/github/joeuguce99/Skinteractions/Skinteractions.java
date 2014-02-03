@@ -24,24 +24,24 @@ public class Skinteractions extends JavaPlugin{
     	if (Bukkit.getPluginManager().getPlugin("Multiverse-Core") != null) {
     		
     		Skript.registerEffect(EffRegen.class,
-    				"re[-]gen[erate][ world] %world% [with[ the] (same|current) seed]",
-    				"re[-]gen[erate][ world] %world% with seed %text%",
-    				"re[-]gen[erate][ world] %world% with[ a] random seed");
+    				"re[-]gen[erate] [world ]%world% [with [the ](same|current) seed]",
+    				"re[-]gen[erate] [world ]%world% with seed %string%",
+    				"re[-]gen[erate] [world ]%world% with [a ]random seed");
     		
     		Skript.registerEffect(EffCreate.class,
-    				"(gen[erate]|create|make)[ a] %text% world (with name|named|called) %text%[ with[ a] random seed]",
-    				"(gen[erate]|create|make)[ a] %text% world (with name|named|called) %text% with seed %text%",
-    				"(gen[erate]|create|make)[ a] %text% world (with name|named|called) %text% with seed %text% and gen[erator] %text%",
-    				"(gen[erate]|create|make)[ a] %text% world (with name|named|called) %text% (with[ a] random seed and|with) gen[erator] %text%");
+    				"(gen[erate]|create|make) [a ]%string% world (with name|named|called) %string%[ with[ a] random seed]",
+    				"(gen[erate]|create|make) [a ]%string% world (with name|named|called) %string% with seed %string%",
+    				"(gen[erate]|create|make) [a ]%string% world (with name|named|called) %string% with seed %string% and gen[erator] %string%",
+    				"(gen[erate]|create|make) [a ]%string% world (with name|named|called) %string% (with [a ]random seed and|with) gen[erator] %string%");
 
     		Skript.registerEffect(EffDel.class,
     				"(delete|remove) world %world%");
     		
     		Skript.registerEffect(EffClone.class,
-    				"(clone|copy|duplicate) world %world% to[ world] %text%");
+    				"(clone|copy|duplicate) world %world% to [world ]%world%");
     		
     		Skript.registerExpression(ExprMVSpawn.class, Location.class, ExpressionType.PROPERTY,
-    				"(mv|multiverse|plugin) spawn of[ world] %world%");
+    				"(mv|multiverse|plugin) spawn of [world ]%world%");
     		
     		Skript.info("Successfully added Skinteractions Multiverse Hook.");
     	} else {
