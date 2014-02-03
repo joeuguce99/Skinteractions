@@ -43,10 +43,10 @@ public class EffRegen extends Effect {
 		final World w = world.getSingle(e);
 		final MultiverseCore p = ((MultiverseCore) Bukkit.getPluginManager().getPlugin("Multiverse-Core"));
 		final MVWorldManager m = p.getMVWorldManager();
-			final String s = seed.getSingle(e);
 		if (method == 0){
 			m.regenWorld(w.getName(), false, false, "");
 		} else if(method == 1) {
+			final String s = seed.getSingle(e);
 			m.regenWorld(w.getName(), true, false, s.toString());
 		} else {
 			m.regenWorld(w.getName(), true, true, "");
